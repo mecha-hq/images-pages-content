@@ -1,0 +1,118 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "sbom-sha256:f62185529865b843413d4d0120ed6b4fe7acc540938c13afb29e533ddae1632e",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2025-07-21T22:19:03Z",
+    "creators": [
+      "Tool: apko (v0.29.7)",
+      "Organization: Chainguard, Inc"
+    ],
+    "licenseListVersion": "3.16"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/apko/",
+  "documentDescribes": [
+    "SPDXRef-Package-sha256-a6a431381b7d959a84b75ab71c6c1c2ddd885fda72a635171b0dbcf08f3132d6"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-sha256-a6a431381b7d959a84b75ab71c6c1c2ddd885fda72a635171b0dbcf08f3132d6",
+      "name": "sha256:a6a431381b7d959a84b75ab71c6c1c2ddd885fda72a635171b0dbcf08f3132d6",
+      "versionInfo": "sha256:a6a431381b7d959a84b75ab71c6c1c2ddd885fda72a635171b0dbcf08f3132d6",
+      "filesAnalyzed": false,
+      "description": "apko container image",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: apko-generated image",
+      "primaryPackagePurpose": "CONTAINER",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a6a431381b7d959a84b75ab71c6c1c2ddd885fda72a635171b0dbcf08f3132d6"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/yamlfmt@sha256%3Aa6a431381b7d959a84b75ab71c6c1c2ddd885fda72a635171b0dbcf08f3132d6?arch=amd64\u0026mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sha256-f62185529865b843413d4d0120ed6b4fe7acc540938c13afb29e533ddae1632e",
+      "name": "sha256:f62185529865b843413d4d0120ed6b4fe7acc540938c13afb29e533ddae1632e",
+      "versionInfo": "unknown",
+      "filesAnalyzed": false,
+      "description": "apko operating system layer",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: apko-generated image",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/yamlfmt@sha256%3Af62185529865b843413d4d0120ed6b4fe7acc540938c13afb29e533ddae1632e?arch=amd64\u0026mediaType=application%2Fvnd.oci.image.layer.v1.tar%2Bgzip\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-OperatingSystem-unknown",
+      "name": "unknown",
+      "versionInfo": "unknown",
+      "filesAnalyzed": false,
+      "description": "Operating System",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: apko-generated image",
+      "primaryPackagePurpose": "OPERATING_SYSTEM"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-yamlfmt-0.17.2-r0",
+      "name": "yamlfmt",
+      "versionInfo": "0.17.2-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Unknown",
+      "supplier": "Organization: Unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/unknown/yamlfmt@0.17.2-r0?arch=x86_64",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-tools-yamlfmt-melange.yaml-13b65b2f6386595d0f616e9190c34db49ee7e647",
+      "name": "tools/yamlfmt/melange.yaml",
+      "versionInfo": "13b65b2f6386595d0f616e9190c34db49ee7e647",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Unknown",
+      "supplier": "Organization: Unknown",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/https%3A/%2Funknown%2Funknown%2Funknown@13b65b2f6386595d0f616e9190c34db49ee7e647#tools/yamlfmt/melange.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-a6a431381b7d959a84b75ab71c6c1c2ddd885fda72a635171b0dbcf08f3132d6",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-f62185529865b843413d4d0120ed6b4fe7acc540938c13afb29e533ddae1632e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-yamlfmt-0.17.2-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-tools-yamlfmt-melange.yaml-13b65b2f6386595d0f616e9190c34db49ee7e647"
+    }
+  ]
+}

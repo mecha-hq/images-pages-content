@@ -1,0 +1,36 @@
+{
+  "image": "ghcr.io/mecha-hq/yamlfmt:0.17.2-arm64",
+  "summary": {
+    "fatal": 0,
+    "warn": 0,
+    "info": 2,
+    "skip": 1,
+    "pass": 13
+  },
+  "details": [
+    {
+      "code": "DKL-LI-0001",
+      "title": "Avoid empty password",
+      "level": "SKIP",
+      "alerts": [
+        "failed to detect etc/shadow,etc/master.passwd"
+      ]
+    },
+    {
+      "code": "CIS-DI-0005",
+      "title": "Enable Content trust for Docker",
+      "level": "INFO",
+      "alerts": [
+        "export DOCKER_CONTENT_TRUST=1 before docker pull/build"
+      ]
+    },
+    {
+      "code": "CIS-DI-0006",
+      "title": "Add HEALTHCHECK instruction to the container image",
+      "level": "INFO",
+      "alerts": [
+        "not found HEALTHCHECK statement"
+      ]
+    }
+  ]
+}
