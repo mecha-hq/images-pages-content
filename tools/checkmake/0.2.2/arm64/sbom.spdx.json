@@ -1,0 +1,118 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "sbom-sha256:3217cc34734a679fd4a4cd223f93038a5e28cc379b760cf9c704fc4a3287ac8c",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2025-07-21T22:12:19Z",
+    "creators": [
+      "Tool: apko (v0.29.7)",
+      "Organization: Chainguard, Inc"
+    ],
+    "licenseListVersion": "3.16"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/apko/",
+  "documentDescribes": [
+    "SPDXRef-Package-sha256-2c8953263c324f7243f1aa8f04f76846699da64ef9b363dad7e86b5a1727ab0f"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-sha256-2c8953263c324f7243f1aa8f04f76846699da64ef9b363dad7e86b5a1727ab0f",
+      "name": "sha256:2c8953263c324f7243f1aa8f04f76846699da64ef9b363dad7e86b5a1727ab0f",
+      "versionInfo": "sha256:2c8953263c324f7243f1aa8f04f76846699da64ef9b363dad7e86b5a1727ab0f",
+      "filesAnalyzed": false,
+      "description": "apko container image",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: apko-generated image",
+      "primaryPackagePurpose": "CONTAINER",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2c8953263c324f7243f1aa8f04f76846699da64ef9b363dad7e86b5a1727ab0f"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/checkmake@sha256%3A2c8953263c324f7243f1aa8f04f76846699da64ef9b363dad7e86b5a1727ab0f?arch=arm64\u0026mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sha256-3217cc34734a679fd4a4cd223f93038a5e28cc379b760cf9c704fc4a3287ac8c",
+      "name": "sha256:3217cc34734a679fd4a4cd223f93038a5e28cc379b760cf9c704fc4a3287ac8c",
+      "versionInfo": "unknown",
+      "filesAnalyzed": false,
+      "description": "apko operating system layer",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: apko-generated image",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/checkmake@sha256%3A3217cc34734a679fd4a4cd223f93038a5e28cc379b760cf9c704fc4a3287ac8c?arch=arm64\u0026mediaType=application%2Fvnd.oci.image.layer.v1.tar%2Bgzip\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-OperatingSystem-unknown",
+      "name": "unknown",
+      "versionInfo": "unknown",
+      "filesAnalyzed": false,
+      "description": "Operating System",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: apko-generated image",
+      "primaryPackagePurpose": "OPERATING_SYSTEM"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-checkmake-0.2.2-r0",
+      "name": "checkmake",
+      "versionInfo": "0.2.2-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Unknown",
+      "supplier": "Organization: Unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/unknown/checkmake@0.2.2-r0?arch=aarch64",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-tools-checkmake-melange.yaml-1d965f25267ab10dfb1a8e095bc794fd6e4ce18d",
+      "name": "tools/checkmake/melange.yaml",
+      "versionInfo": "1d965f25267ab10dfb1a8e095bc794fd6e4ce18d",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Unknown",
+      "supplier": "Organization: Unknown",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/https%3A/%2Funknown%2Funknown%2Funknown@1d965f25267ab10dfb1a8e095bc794fd6e4ce18d#tools/checkmake/melange.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-2c8953263c324f7243f1aa8f04f76846699da64ef9b363dad7e86b5a1727ab0f",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-3217cc34734a679fd4a4cd223f93038a5e28cc379b760cf9c704fc4a3287ac8c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-checkmake-0.2.2-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-tools-checkmake-melange.yaml-1d965f25267ab10dfb1a8e095bc794fd6e4ce18d"
+    }
+  ]
+}
