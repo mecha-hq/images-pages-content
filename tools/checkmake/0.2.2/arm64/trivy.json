@@ -1,0 +1,111 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "019df0b7-3340-7cf0-9b5d-e1fb92a0ecd4",
+  "CreatedAt": "2026-05-04T02:00:31.296848626Z",
+  "ArtifactID": "sha256:8f9db6c2a76bb785f7289ad69ef5513974c08a5fd261588d059984a7d811ddb1",
+  "ArtifactName": "ghcr.io/mecha-hq/checkmake:0.2.2-arm64",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 3520512,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.22"
+    },
+    "ImageID": "sha256:43e137500682ee22e774aa751604bb1d23902ee4bace37a3ed7ac9e06a54e224",
+    "DiffIDs": [
+      "sha256:19d8acd99fc0349ed0bfc6671fb82d983bd8ecd89fdb0a4197b971511371b67f"
+    ],
+    "RepoTags": [
+      "ghcr.io/mecha-hq/checkmake:0.2.2-arm64"
+    ],
+    "RepoDigests": [
+      "ghcr.io/mecha-hq/checkmake@sha256:f2397e1e0922926f3581ee6b4642d851539e9eadde72c855b1182e2dd7b8e940"
+    ],
+    "Reference": "ghcr.io/mecha-hq/checkmake:0.2.2-arm64",
+    "ImageConfig": {
+      "architecture": "arm64",
+      "author": "github.com/chainguard-dev/apko",
+      "created": "2025-07-21T22:12:19Z",
+      "history": [
+        {
+          "created": "2025-07-21T22:12:19Z",
+          "created_by": "apko",
+          "comment": "This is an apko single-layer image"
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:19d8acd99fc0349ed0bfc6671fb82d983bd8ecd89fdb0a4197b971511371b67f"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "--help"
+        ],
+        "Entrypoint": [
+          "/usr/bin/checkmake"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin",
+          "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+        ],
+        "Labels": {
+          "org.opencontainers.image.authors": "Claudio Beatrice",
+          "org.opencontainers.image.created": "2025-07-21T22:12:19Z",
+          "org.opencontainers.image.description": "Zero-CVEs Checkmake image.",
+          "org.opencontainers.image.documentation": "https://github.com/mecha-hq/images/README.md",
+          "org.opencontainers.image.licenses": "Apache-2.0",
+          "org.opencontainers.image.source": "https://github.com/mecha-hq/images",
+          "org.opencontainers.image.title": "Mecha HQ's Checkmake",
+          "org.opencontainers.image.url": "https://mecha.sh",
+          "org.opencontainers.image.vendor": "Mecha HQ"
+        },
+        "User": "65532"
+      }
+    },
+    "Layers": [
+      {
+        "Size": 3520512,
+        "DiffID": "sha256:19d8acd99fc0349ed0bfc6671fb82d983bd8ecd89fdb0a4197b971511371b67f"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "ghcr.io/mecha-hq/checkmake:0.2.2-arm64 (alpine 3.22)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Packages": [
+        {
+          "ID": "checkmake@0.2.2-r0",
+          "Name": "checkmake",
+          "Identifier": {
+            "UID": "2fe923c5831b73d2"
+          },
+          "Version": "0.2.2-r0",
+          "Arch": "aarch64",
+          "SrcName": "checkmake",
+          "SrcVersion": "0.2.2-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Maintainer": "unknown",
+          "Layer": {
+            "DiffID": "sha256:19d8acd99fc0349ed0bfc6671fb82d983bd8ecd89fdb0a4197b971511371b67f"
+          },
+          "Digest": "sha1:1e7d7a4fcd3aad486c12c27448017dbeb812bb38",
+          "InstalledFiles": [
+            "usr/bin/checkmake",
+            "var/lib/db/sbom/checkmake-0.2.2-r0.spdx.json"
+          ],
+          "AnalyzedBy": "apk"
+        }
+      ]
+    }
+  ]
+}
