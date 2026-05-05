@@ -1,0 +1,102 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "019df5dd-92d9-7875-9d83-97a536ff7860",
+  "CreatedAt": "2026-05-05T02:00:32.217555293Z",
+  "ArtifactID": "sha256:1882520acfcd2c693a7cd9e7ac533ca50ce026b0ab051a42e7e0a1184c93e6a7",
+  "ArtifactName": "ghcr.io/mecha-hq/yamlfmt:0.17.2-amd64",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 4764160,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.22"
+    },
+    "ImageID": "sha256:8e0244e66fd64acbd1bef134d21fd6e2b187805bfbfc3b4973de97ded3d7f474",
+    "DiffIDs": [
+      "sha256:6a550873036ef22426866a6e347f42515030d9bc6788ce9f418e445e987f6ac4"
+    ],
+    "RepoTags": [
+      "ghcr.io/mecha-hq/yamlfmt:0.17.2-amd64"
+    ],
+    "RepoDigests": [
+      "ghcr.io/mecha-hq/yamlfmt@sha256:c0dba5b4646ca0cf55f3806ec608c9cbd16ed9b6d708a2a1f68f0dad5dd8af97"
+    ],
+    "Reference": "ghcr.io/mecha-hq/yamlfmt:0.17.2-amd64",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "author": "github.com/chainguard-dev/apko",
+      "created": "2025-07-21T22:19:03Z",
+      "history": [
+        {
+          "created": "2025-07-21T22:19:03Z",
+          "created_by": "apko",
+          "comment": "This is an apko single-layer image"
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:6a550873036ef22426866a6e347f42515030d9bc6788ce9f418e445e987f6ac4"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "--help"
+        ],
+        "Entrypoint": [
+          "/usr/bin/yamlfmt"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin",
+          "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+        ],
+        "Labels": {
+          "org.opencontainers.image.created": "2025-07-21T22:19:03Z"
+        },
+        "User": "65532"
+      }
+    },
+    "Layers": [
+      {
+        "Size": 4764160,
+        "DiffID": "sha256:6a550873036ef22426866a6e347f42515030d9bc6788ce9f418e445e987f6ac4"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "ghcr.io/mecha-hq/yamlfmt:0.17.2-amd64 (alpine 3.22)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Packages": [
+        {
+          "ID": "yamlfmt@0.17.2-r0",
+          "Name": "yamlfmt",
+          "Identifier": {
+            "PURL": "pkg:apk/unknown/yamlfmt@0.17.2-r0?arch=x86_64",
+            "UID": "50b516d7e8eb006"
+          },
+          "Version": "0.17.2-r0",
+          "Arch": "x86_64",
+          "SrcName": "yamlfmt",
+          "SrcVersion": "0.17.2-r0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Layer": {
+            "DiffID": "sha256:6a550873036ef22426866a6e347f42515030d9bc6788ce9f418e445e987f6ac4"
+          },
+          "InstalledFiles": [
+            "usr/bin/yamlfmt",
+            "var/lib/db/sbom/yamlfmt-0.17.2-r0.spdx.json"
+          ],
+          "AnalyzedBy": "sbom"
+        }
+      ]
+    }
+  ]
+}
