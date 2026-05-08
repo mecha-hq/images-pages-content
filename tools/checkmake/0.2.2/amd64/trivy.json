@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019e002c-7d0a-71d9-bea7-8439f8b17737",
-  "CreatedAt": "2026-05-07T02:02:56.138122101Z",
+  "ReportID": "019e0558-8620-7c8f-921a-2181d429e134",
+  "CreatedAt": "2026-05-08T02:09:08.128824215Z",
   "ArtifactID": "sha256:9efe131b509edf1af1f3490439861876e69085d259b786c0ea57366e98cdc7c9",
   "ArtifactName": "ghcr.io/mecha-hq/checkmake:0.2.2-amd64",
   "ArtifactType": "container_image",
