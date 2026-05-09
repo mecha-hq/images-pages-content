@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019df5dd-92d9-7875-9d83-97a536ff7860",
-  "CreatedAt": "2026-05-05T02:00:32.217555293Z",
+  "ReportID": "019e0a79-07ea-77bc-b164-c08c697036ed",
+  "CreatedAt": "2026-05-09T02:02:44.586507407Z",
   "ArtifactID": "sha256:1882520acfcd2c693a7cd9e7ac533ca50ce026b0ab051a42e7e0a1184c93e6a7",
   "ArtifactName": "ghcr.io/mecha-hq/yamlfmt:0.17.2-amd64",
   "ArtifactType": "container_image",
@@ -77,8 +77,7 @@
           "ID": "yamlfmt@0.17.2-r0",
           "Name": "yamlfmt",
           "Identifier": {
-            "PURL": "pkg:apk/unknown/yamlfmt@0.17.2-r0?arch=x86_64",
-            "UID": "50b516d7e8eb006"
+            "UID": "59d0366cc7950888"
           },
           "Version": "0.17.2-r0",
           "Arch": "x86_64",
@@ -87,14 +86,16 @@
           "Licenses": [
             "MIT"
           ],
+          "Maintainer": "unknown",
           "Layer": {
             "DiffID": "sha256:6a550873036ef22426866a6e347f42515030d9bc6788ce9f418e445e987f6ac4"
           },
+          "Digest": "sha1:c19ff55cb8a4560989af6a25b7cd03c80b936bb9",
           "InstalledFiles": [
             "usr/bin/yamlfmt",
             "var/lib/db/sbom/yamlfmt-0.17.2-r0.spdx.json"
           ],
-          "AnalyzedBy": "sbom"
+          "AnalyzedBy": "apk"
         }
       ]
     }
