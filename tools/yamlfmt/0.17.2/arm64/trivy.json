@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019e0a79-0868-7210-9b96-debaf105ffe9",
-  "CreatedAt": "2026-05-09T02:02:44.712136106Z",
+  "ReportID": "019e14ce-9c98-7b74-9a52-b04d21df9df7",
+  "CreatedAt": "2026-05-11T02:12:25.368751643Z",
   "ArtifactID": "sha256:ad165232bc3c0dd0252a224c29293e9ddc31fb4d600d4aead34927beb1ed964e",
   "ArtifactName": "ghcr.io/mecha-hq/yamlfmt:0.17.2-arm64",
   "ArtifactType": "container_image",
