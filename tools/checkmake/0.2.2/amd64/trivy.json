@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019e1f1c-6fc6-78d1-a488-20d1157acd20",
-  "CreatedAt": "2026-05-13T02:13:37.862578745Z",
+  "ReportID": "019e2969-a70d-78ff-beb3-fdcbc51652d5",
+  "CreatedAt": "2026-05-15T02:14:10.445590573Z",
   "ArtifactID": "sha256:9efe131b509edf1af1f3490439861876e69085d259b786c0ea57366e98cdc7c9",
   "ArtifactName": "ghcr.io/mecha-hq/checkmake:0.2.2-amd64",
   "ArtifactType": "container_image",
@@ -85,7 +85,8 @@
           "ID": "checkmake@0.2.2-r0",
           "Name": "checkmake",
           "Identifier": {
-            "UID": "f8c3372a86afebd"
+            "PURL": "pkg:apk/unknown/checkmake@0.2.2-r0?arch=x86_64",
+            "UID": "a42d7b8bf2c56fae"
           },
           "Version": "0.2.2-r0",
           "Arch": "x86_64",
@@ -94,16 +95,14 @@
           "Licenses": [
             "MIT"
           ],
-          "Maintainer": "unknown",
           "Layer": {
             "DiffID": "sha256:459686204128cc42fd85261f01045e99d3f4d86317697d4e7fd920308a8abdb9"
           },
-          "Digest": "sha1:68baaa2dc24a21e4fdf284ca910b61b5c67b279a",
           "InstalledFiles": [
             "usr/bin/checkmake",
             "var/lib/db/sbom/checkmake-0.2.2-r0.spdx.json"
           ],
-          "AnalyzedBy": "apk"
+          "AnalyzedBy": "sbom"
         }
       ]
     }
